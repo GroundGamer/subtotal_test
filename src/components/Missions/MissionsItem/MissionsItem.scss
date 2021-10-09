@@ -1,0 +1,31 @@
+.missions__list-item{
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+
+  &:last-child{
+    border-bottom: 0;
+  }
+
+  p{
+    margin-bottom: 5px;
+  }
+
+  &-namedMissions{
+    a{
+      text-decoration: none;
+      color: #ffc700;
+
+      &:active{
+        color: #ffffff;
+      }
+    }
+  }
+
+  &_imgRocket{
+    border-radius: 5px;
+    border: 2px solid rgba(255, 199, 0, 0.40);
+    width: 25%;
+    height: 25%;
+  }
+}

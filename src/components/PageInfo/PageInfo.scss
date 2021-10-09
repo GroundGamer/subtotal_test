@@ -1,0 +1,47 @@
+.pageInfo {
+  width: 100%;
+  height: 100%;
+
+  &__back-btn{
+    border: 0;
+    cursor: pointer;
+    color: #ffc700;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(190,148,105,0);
+  }
+
+  &__list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    margin-bottom: 5px;
+
+    p {
+      color: #ffc700;
+      margin-bottom: 5px;
+    }
+
+    &-namedMissions {
+      a {
+        text-decoration: none;
+        color: #ffc700;
+
+        &:active {
+          color: #ffffff;
+        }
+      }
+    }
+
+    &_imgRocket {
+      border-radius: 5px;
+      border: 2px solid rgba(255, 199, 0, 0.40);
+      width: 50%;
+      height: 50%;
+    }
+  }
+}
