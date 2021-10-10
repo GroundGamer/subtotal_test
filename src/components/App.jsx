@@ -6,7 +6,6 @@ import {BrowserRouter, Redirect, Route, Switch} from "react-router-dom";
 
 import './app.scss'
 
-
 const App = () => {
     return (
         <>

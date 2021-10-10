@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {useParams} from "react-router-dom";
+import {useParams} from "react-router-dom"; // Позволяет получить с ссылки параметры
 import {getOneMissionsDetails} from "../actions/getOneMissionsDetails";
 
 import './PageInfo.scss'
@@ -30,3 +30,5 @@ const PageInfo = (props) => {
 };
 
 export default PageInfo;
+
+// Этот компонент выводит страницу выбранной нами миссии.

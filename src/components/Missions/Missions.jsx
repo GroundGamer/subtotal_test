@@ -8,13 +8,13 @@ import './Missions.scss'
 import {Redirect} from "react-router-dom";
 
 const Missions = () => {
-    const dispatch = useDispatch()
-    const missions = useSelector(state => state.repos.items)
-    const isFetching = useSelector(state => state.repos.isFetching)
-    const isFetchError = useSelector(state => state.repos.isFetchError)
+    const dispatch = useDispatch() // Позволяет вызывать action
+    const missions = useSelector(state => state.repos.items) // Получаем массив миссий
+    const isFetching = useSelector(state => state.repos.isFetching) // Получаем true когда данные грузятся, false когда загрузились
+    const isFetchError = useSelector(state => state.repos.isFetchError) // Получаем true при ошибке, false когда ошибка исправлена
 
-    const [searchValue, setSearchValue] = useState("")
-    const [orderBy, setOrderBy] = useState(true)
+    const [searchValue, setSearchValue] = useState("") // Делаем управляемым input, а также запоминаем наши введённые данные
+    const [orderBy, setOrderBy] = useState(true) // Делаем сортировку элементов
 
     useEffect(() => {
         dispatch(getMissionsDetails())
@@ -55,3 +55,5 @@ const Missions = () => {
 };
 
 export default Missions;
+
+// В данном компоненте мы получаем данные из state reducer'a, а также передаём отсортированные данные, по убыванию или ворзрастанию, в наш MissionsItem и выводим в список каждую миссию.
